@@ -1,0 +1,140 @@
+PODS:
+  - AFNetworking (3.1.0):
+    - AFNetworking/NSURLSession (= 3.1.0)
+    - AFNetworking/Reachability (= 3.1.0)
+    - AFNetworking/Security (= 3.1.0)
+    - AFNetworking/Serialization (= 3.1.0)
+    - AFNetworking/UIKit (= 3.1.0)
+  - AFNetworking/NSURLSession (3.1.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.1.0)
+  - AFNetworking/Security (3.1.0)
+  - AFNetworking/Serialization (3.1.0)
+  - AFNetworking/UIKit (3.1.0):
+    - AFNetworking/NSURLSession
+  - AlicloudPush (1.9.8):
+    - AlicloudUT
+    - AlicloudUtils
+  - AlicloudUT (5.2.0.5):
+    - AlicloudUTDID
+  - AlicloudUTDID (1.1.0.19)
+  - AlicloudUtils (1.3.5):
+    - AlicloudUTDID
+  - BTBadgeView (1.3)
+  - ButtonAppearance (0.1.1)
+  - DLAlertView (1.2.5)
+  - FMDB (2.7.2):
+    - FMDB/standard (= 2.7.2)
+  - FMDB/standard (2.7.2)
+  - JDFlipNumberView (2.2.3):
+    - JDFlipNumberView/Core (= 2.2.3)
+    - JDFlipNumberView/DefaultImageBundle (= 2.2.3)
+    - JDFlipNumberView/FlipImageView (= 2.2.3)
+  - JDFlipNumberView/Core (2.2.3)
+  - JDFlipNumberView/DefaultImageBundle (2.2.3):
+    - JDFlipNumberView/Core
+  - JDFlipNumberView/FlipImageView (2.2.3)
+  - JMJParametricAnimation (1.0.1)
+  - LDProgressView (1.2.1)
+  - LKDBHelper (2.1.9):
+    - FMDB
+  - Masonry (1.0.2)
+  - MBProgressHUD (0.9.2)
+  - MJRefresh (3.1.15.3)
+  - MZTimerLabel (0.5.4)
+  - ReactiveCocoa (2.1.8):
+    - ReactiveCocoa/Core (= 2.1.8)
+    - ReactiveCocoa/no-arc (= 2.1.8)
+  - ReactiveCocoa/Core (2.1.8):
+    - ReactiveCocoa/no-arc
+  - ReactiveCocoa/no-arc (2.1.8)
+  - Reveal-SDK (14)
+  - SDiPhoneVersion (1.1.2)
+  - SDWebImage (3.7.6):
+    - SDWebImage/Core (= 3.7.6)
+  - SDWebImage/Core (3.7.6)
+  - "TKAlert&TKActionSheet (1.0.24)"
+  - TYAlertController (1.1.8)
+  - UICountingLabel (1.2.0)
+
+DEPENDENCIES:
+  - AFNetworking (~> 3.1.0)
+  - AlicloudPush (~> 1.9.8)
+  - BTBadgeView (~> 1.3)
+  - ButtonAppearance (~> 0.1.1)
+  - DLAlertView (~> 1.2.5)
+  - JDFlipNumberView (~> 2.2.3)
+  - JMJParametricAnimation (~> 1.0)
+  - LDProgressView (~> 1.2.1)
+  - LKDBHelper (~> 2.1.8)
+  - Masonry (~> 1.0.0)
+  - MBProgressHUD (~> 0.8)
+  - MJRefresh
+  - MZTimerLabel (~> 0.5.4)
+  - ReactiveCocoa (= 2.1.8)
+  - Reveal-SDK
+  - SDiPhoneVersion (~> 1.1.2)
+  - SDWebImage (~> 3.7.6)
+  - "TKAlert&TKActionSheet (~> 1.0.23)"
+  - TYAlertController (~> 1.1.3)
+  - UICountingLabel (~> 1.2.0)
+
+SPEC REPOS:
+  https://github.com/aliyun/aliyun-specs.git:
+    - AlicloudPush
+    - AlicloudUT
+    - AlicloudUTDID
+    - AlicloudUtils
+  https://github.com/CocoaPods/Specs.git:
+    - AFNetworking
+    - BTBadgeView
+    - ButtonAppearance
+    - DLAlertView
+    - FMDB
+    - JDFlipNumberView
+    - JMJParametricAnimation
+    - LDProgressView
+    - LKDBHelper
+    - Masonry
+    - MBProgressHUD
+    - MJRefresh
+    - MZTimerLabel
+    - ReactiveCocoa
+    - Reveal-SDK
+    - SDiPhoneVersion
+    - SDWebImage
+    - "TKAlert&TKActionSheet"
+    - TYAlertController
+    - UICountingLabel
+
+SPEC CHECKSUMS:
+  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  AlicloudPush: 50df02cff716d9ac950ceb89195d447e7af003a2
+  AlicloudUT: 1b52965b97c5fc0b630901ce184391fbe1ef8479
+  AlicloudUTDID: 14b582e41b39bc66e5a3420b61dafd0567ef4603
+  AlicloudUtils: 36bd836fdd5c040ee0c9c06b0e1e1096a8c59c44
+  BTBadgeView: 4a3cc26f6c19d369f8a0c6fc5dd2293ab19a7619
+  ButtonAppearance: 36534cf98eedffd5b17a2d73ab4087f598fc9442
+  DLAlertView: 774c1242cc854177fdc07634ed3f8c250a38864d
+  FMDB: 6198a90e7b6900cfc046e6bc0ef6ebb7be9236aa
+  JDFlipNumberView: e4672404447e7240d26d22f8c850660cd44eef69
+  JMJParametricAnimation: dbdad5935c437d4f90ac21d439ddda4fa68a18ea
+  LDProgressView: f6afc7c30d2a9edf33001515f3189338567a32d2
+  LKDBHelper: 78e6c0de99f45375892223a334535d745a123dbd
+  Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
+  MBProgressHUD: 1569cf7ace17a8bac47aabfbb8580a49690386d1
+  MJRefresh: b48380ae2b927b46c4ef000de9adb8dc748e1df7
+  MZTimerLabel: cd9bfb9304540ef2a9e163384fca9c978f0dbf83
+  ReactiveCocoa: f89f2e009a87951b50321bf9feb958823fcc617e
+  Reveal-SDK: 55b5c5545233b680c2f8da734f202acc15d422b7
+  SDiPhoneVersion: c52245ccaab8142701e2e7fb8f0391ba3f255b76
+  SDWebImage: c325cf02c30337336b95beff20a13df489ec0ec9
+  "TKAlert&TKActionSheet": aac6b3a78faa9cdf2a0a10df34235a875f1c3661
+  TYAlertController: 502d3dbc5d007e68559400b509c736f60ebc2cc1
+  UICountingLabel: 1db4e7d023e1762171eb226d6dff47a7a84f27aa
+
+PODFILE CHECKSUM: e6db64a2ff558b0ab54bd17d73a134e09bfd7ea6
+
+COCOAPODS: 1.5.0
