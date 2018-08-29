@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CollertPrizeSelectView">
+            <rect key="frame" x="0.0" y="0.0" width="311" height="146"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="30j-Aa-Fyz">
+                    <rect key="frame" x="0.0" y="0.0" width="311" height="77"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mo0-3O-9fs">
+                            <rect key="frame" x="0.0" y="0.0" width="311" height="38"/>
+                            <subviews>
+                                <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SzL-4W-GhX">
+                                    <rect key="frame" x="14" y="8" width="18" height="22"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="22" id="3PL-nR-n1Q"/>
+                                        <constraint firstAttribute="width" constant="18" id="RN5-me-rE7"/>
+                                    </constraints>
+                                    <state key="normal" image="checkbox_circle_red_selected_18_18"/>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我要兑换" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8HT-hc-fOU">
+                                    <rect key="frame" x="44" y="9" width="252" height="21"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="SzL-4W-GhX" firstAttribute="centerY" secondItem="8HT-hc-fOU" secondAttribute="centerY" id="AbK-7f-HUg"/>
+                                <constraint firstItem="SzL-4W-GhX" firstAttribute="top" secondItem="mo0-3O-9fs" secondAttribute="topMargin" id="Q1C-Jk-vBx"/>
+                                <constraint firstItem="SzL-4W-GhX" firstAttribute="bottom" secondItem="8HT-hc-fOU" secondAttribute="bottom" id="Qsj-Aj-gSO"/>
+                                <constraint firstItem="SzL-4W-GhX" firstAttribute="leading" secondItem="mo0-3O-9fs" secondAttribute="leading" constant="14" id="eo1-0o-6Uj"/>
+                                <constraint firstAttribute="trailing" secondItem="8HT-hc-fOU" secondAttribute="trailing" constant="15" id="lDi-T3-r2g"/>
+                                <constraint firstItem="8HT-hc-fOU" firstAttribute="leading" secondItem="SzL-4W-GhX" secondAttribute="trailing" constant="12" id="xqt-Ec-BNL"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DpD-ic-hPT">
+                            <rect key="frame" x="0.0" y="39" width="311" height="38"/>
+                            <subviews>
+                                <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Gv-bb-Fqe">
+                                    <rect key="frame" x="14" y="8" width="18" height="22"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <state key="normal" image="checkbox_circle_red_normal_18_18"/>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="我要兑换" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tgx-Ng-3xY">
+                                    <rect key="frame" x="44" y="9" width="257" height="21"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </view>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="V4x-0Y-E9d">
+                            <rect key="frame" x="0.0" y="38" width="311" height="1"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="fee-yn-Llu"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="DpD-ic-hPT" firstAttribute="top" secondItem="V4x-0Y-E9d" secondAttribute="bottom" id="4a0-bP-Qfu"/>
+                        <constraint firstItem="V4x-0Y-E9d" firstAttribute="leading" secondItem="DpD-ic-hPT" secondAttribute="leading" id="AY6-6m-gMj"/>
+                        <constraint firstAttribute="trailing" secondItem="V4x-0Y-E9d" secondAttribute="trailing" id="GFc-DI-cSE"/>
+                        <constraint firstItem="V4x-0Y-E9d" firstAttribute="trailing" secondItem="mo0-3O-9fs" secondAttribute="trailing" id="GTE-jC-opI"/>
+                        <constraint firstItem="V4x-0Y-E9d" firstAttribute="centerY" secondItem="30j-Aa-Fyz" secondAttribute="centerY" id="H4g-la-JK9"/>
+                        <constraint firstItem="V4x-0Y-E9d" firstAttribute="top" secondItem="mo0-3O-9fs" secondAttribute="bottom" id="T4Z-mY-qnZ"/>
+                        <constraint firstAttribute="bottom" secondItem="DpD-ic-hPT" secondAttribute="bottom" id="WLL-F5-UVx"/>
+                        <constraint firstItem="V4x-0Y-E9d" firstAttribute="trailing" secondItem="DpD-ic-hPT" secondAttribute="trailing" id="jAb-Qz-QXc"/>
+                        <constraint firstItem="V4x-0Y-E9d" firstAttribute="leading" secondItem="mo0-3O-9fs" secondAttribute="leading" id="mbp-HO-Akh"/>
+                        <constraint firstItem="mo0-3O-9fs" firstAttribute="top" secondItem="30j-Aa-Fyz" secondAttribute="top" id="qHg-ut-UgP"/>
+                        <constraint firstItem="V4x-0Y-E9d" firstAttribute="leading" secondItem="30j-Aa-Fyz" secondAttribute="leading" id="rsh-tz-n7F"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DuI-X9-oNn">
+                    <rect key="frame" x="0.0" y="88" width="12" height="22"/>
+                    <state key="normal" image="checkbox_square_blue_selected_12_12"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nPj-lT-bpL">
+                    <rect key="frame" x="82" y="85" width="123" height="27"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="123" id="jHL-Qt-hOe"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                    <state key="normal" title="《米花糖服务协议》"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XzD-CL-lWZ">
+                    <rect key="frame" x="206" y="118" width="105" height="28"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="28" id="jUy-Ii-JCa"/>
+                        <constraint firstAttribute="width" constant="105" id="nTj-UA-UGg"/>
+                    </constraints>
+                    <state key="normal" title="确定"/>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我已阅读并同意" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EZq-Xq-ydm">
+                    <rect key="frame" x="14" y="93" width="86" height="13"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="86" id="2LA-dd-gvK"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                    <color key="textColor" red="0.0" green="0.47772747278213501" blue="0.98838847875595093" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="nPj-lT-bpL" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="82" id="92W-MF-5lB"/>
+                <constraint firstAttribute="bottom" secondItem="nPj-lT-bpL" secondAttribute="bottom" constant="34" id="IgO-2O-a4w"/>
+                <constraint firstItem="EZq-Xq-ydm" firstAttribute="centerY" secondItem="nPj-lT-bpL" secondAttribute="centerY" id="JVF-5N-Xv8"/>
+                <constraint firstItem="EZq-Xq-ydm" firstAttribute="baseline" secondItem="nPj-lT-bpL" secondAttribute="baseline" id="JZR-TO-qZI"/>
+                <constraint firstItem="30j-Aa-Fyz" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="L0d-dU-00z"/>
+                <constraint firstItem="DuI-X9-oNn" firstAttribute="top" secondItem="30j-Aa-Fyz" secondAttribute="bottom" constant="11" id="Q8g-oe-n0R"/>
+                <constraint firstAttribute="bottom" secondItem="XzD-CL-lWZ" secondAttribute="bottom" id="T7H-OQ-sAC"/>
+                <constraint firstItem="nPj-lT-bpL" firstAttribute="top" secondItem="30j-Aa-Fyz" secondAttribute="bottom" constant="8" symbolic="YES" id="VB1-6s-qkz"/>
+                <constraint firstItem="nPj-lT-bpL" firstAttribute="leading" secondItem="DuI-X9-oNn" secondAttribute="trailing" constant="70" id="cbL-Vv-qch"/>
+                <constraint firstAttribute="bottom" secondItem="30j-Aa-Fyz" secondAttribute="bottom" constant="69" id="dpf-mX-kor"/>
+                <constraint firstAttribute="trailing" secondItem="30j-Aa-Fyz" secondAttribute="trailing" id="dxP-nL-RTp"/>
+                <constraint firstItem="30j-Aa-Fyz" firstAttribute="trailing" secondItem="XzD-CL-lWZ" secondAttribute="trailing" id="hBm-QM-V5D"/>
+                <constraint firstItem="EZq-Xq-ydm" firstAttribute="baseline" secondItem="nPj-lT-bpL" secondAttribute="firstBaseline" id="hob-bY-7wU"/>
+                <constraint firstItem="EZq-Xq-ydm" firstAttribute="leading" secondItem="DuI-X9-oNn" secondAttribute="trailing" constant="2" id="p1W-zD-7Zy"/>
+                <constraint firstItem="30j-Aa-Fyz" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="uTc-sf-8D4"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="checboxForLegalAgreem" destination="DuI-X9-oNn" id="PFV-qA-uI6"/>
+                <outlet property="confirmButton" destination="XzD-CL-lWZ" id="ra9-KC-LdN"/>
+                <outlet property="firstRowButton" destination="SzL-4W-GhX" id="rGK-Kz-5OV"/>
+                <outlet property="firstRowLabel" destination="8HT-hc-fOU" id="oD9-CN-o3E"/>
+                <outlet property="firstRowView" destination="mo0-3O-9fs" id="Bjf-Bd-nUe"/>
+                <outlet property="legalAgreementButton" destination="nPj-lT-bpL" id="KJG-kJ-7pK"/>
+                <outlet property="legalAgreementLabel" destination="EZq-Xq-ydm" id="GQC-0H-NMA"/>
+                <outlet property="secondRowButton" destination="9Gv-bb-Fqe" id="Z5m-ie-lF0"/>
+                <outlet property="secondRowLabel" destination="tgx-Ng-3xY" id="1hG-Ac-4pn"/>
+                <outlet property="secondRowView" destination="DpD-ic-hPT" id="xaG-Ns-1QP"/>
+                <outlet property="selectContainerView" destination="30j-Aa-Fyz" id="rdj-f6-pnB"/>
+                <outlet property="separationLine" destination="V4x-0Y-E9d" id="3cc-bl-AMA"/>
+            </connections>
+            <point key="canvasLocation" x="-1137" y="-1935"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="checkbox_circle_red_normal_18_18" width="18" height="18"/>
+        <image name="checkbox_circle_red_selected_18_18" width="18" height="18"/>
+        <image name="checkbox_square_blue_selected_12_12" width="12" height="12"/>
+    </resources>
+</document>

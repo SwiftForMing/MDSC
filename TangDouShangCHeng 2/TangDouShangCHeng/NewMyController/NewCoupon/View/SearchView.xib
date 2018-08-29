@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SearchView" customModule="TaoPiao" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uw1-E2-oB1">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LaS-K1-5Mn">
+                            <rect key="frame" x="275" y="23" width="80" height="34"/>
+                            <color key="backgroundColor" red="0.95686274510000002" green="0.95686274510000002" blue="0.95686274510000002" alpha="0.69999999999999996" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="80" id="83V-Kb-6sn"/>
+                                <constraint firstAttribute="height" constant="34" id="nF3-jW-pwS"/>
+                            </constraints>
+                            <state key="normal" title="兑换">
+                                <color key="titleColor" red="0.94901960780000005" green="0.36470588240000001" blue="0.27450980390000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                        </button>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入兑换码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="foa-rB-Aue">
+                            <rect key="frame" x="20" y="23" width="235" height="34"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W17-AK-l2m">
+                            <rect key="frame" x="0.0" y="70" width="375" height="10"/>
+                            <color key="backgroundColor" red="0.97254901960784312" green="0.96470588235294119" blue="0.96470588235294119" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="10" id="C7J-7J-Xl1"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="LaS-K1-5Mn" secondAttribute="trailing" constant="20" id="6J0-wS-nYq"/>
+                        <constraint firstItem="LaS-K1-5Mn" firstAttribute="bottom" secondItem="foa-rB-Aue" secondAttribute="bottom" id="8ZI-K7-8mY"/>
+                        <constraint firstItem="W17-AK-l2m" firstAttribute="leading" secondItem="Uw1-E2-oB1" secondAttribute="leading" id="Tki-bD-QiT"/>
+                        <constraint firstItem="foa-rB-Aue" firstAttribute="centerY" secondItem="Uw1-E2-oB1" secondAttribute="centerY" id="Y8N-HG-o2s"/>
+                        <constraint firstAttribute="bottom" secondItem="W17-AK-l2m" secondAttribute="bottom" id="hZH-hh-UTO"/>
+                        <constraint firstItem="foa-rB-Aue" firstAttribute="leading" secondItem="Uw1-E2-oB1" secondAttribute="leading" constant="20" id="hly-vZ-pMq"/>
+                        <constraint firstItem="LaS-K1-5Mn" firstAttribute="leading" secondItem="foa-rB-Aue" secondAttribute="trailing" constant="20" id="o2I-7v-Vne"/>
+                        <constraint firstItem="LaS-K1-5Mn" firstAttribute="top" secondItem="foa-rB-Aue" secondAttribute="top" id="pAl-dK-O6L"/>
+                        <constraint firstAttribute="trailing" secondItem="W17-AK-l2m" secondAttribute="trailing" id="uWh-4w-eZl"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Uw1-E2-oB1" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="5LN-9m-bat"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Uw1-E2-oB1" secondAttribute="trailing" id="Ncg-bZ-Lbs"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Uw1-E2-oB1" secondAttribute="bottom" id="mwc-fh-zmB"/>
+                <constraint firstItem="Uw1-E2-oB1" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="oLI-Tr-KmG"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="getCouponBtn" destination="LaS-K1-5Mn" id="MGx-2e-bk7"/>
+                <outlet property="inputTF" destination="foa-rB-Aue" id="BAy-wo-pyN"/>
+            </connections>
+            <point key="canvasLocation" x="-360.5" y="-284"/>
+        </view>
+    </objects>
+</document>

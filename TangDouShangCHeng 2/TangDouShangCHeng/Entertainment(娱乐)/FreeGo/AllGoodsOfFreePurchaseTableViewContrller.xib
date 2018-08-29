@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="FZSHANGKJW.ttf">
+            <string>FZSKJW--GB1-0</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AllGoodsOfFreePurchaseTableViewContrller">
+            <connections>
+                <outlet property="tableHeaderView" destination="jUq-3I-LuG" id="iD3-a8-dMw"/>
+                <outlet property="titleLabel" destination="pFR-Lv-dxc" id="PBd-g2-jaW"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableView opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" bouncesZoom="NO" style="grouped" separatorStyle="none" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+            <connections>
+                <outlet property="dataSource" destination="-1" id="Tng-2m-Rnh"/>
+                <outlet property="delegate" destination="-1" id="9aC-8N-iBw"/>
+            </connections>
+        </tableView>
+        <view contentMode="scaleToFill" id="jUq-3I-LuG">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="103"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="free_weekend_banner" translatesAutoresizingMaskIntoConstraints="NO" id="ygq-BC-5Hm">
+                    <rect key="frame" x="48" y="14" width="279" height="69"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="279" id="Nsv-95-9ux"/>
+                        <constraint firstAttribute="height" constant="69" id="gV0-oe-5zn"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pFR-Lv-dxc">
+                    <rect key="frame" x="63" y="47" width="249" height="31"/>
+                    <fontDescription key="fontDescription" name="FZSKJW--GB1-0" family="FZShangKuS-R-GB" pointSize="24"/>
+                    <color key="textColor" red="0.98039215690000003" green="0.72549019609999998" blue="0.97647058819999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.14901960784313725" green="0.0" blue="0.18431372549019609" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="ygq-BC-5Hm" firstAttribute="centerX" secondItem="jUq-3I-LuG" secondAttribute="centerX" id="F5j-id-aYA"/>
+                <constraint firstItem="pFR-Lv-dxc" firstAttribute="top" secondItem="jUq-3I-LuG" secondAttribute="top" constant="47" id="Kzj-pa-0f4"/>
+                <constraint firstAttribute="bottom" secondItem="pFR-Lv-dxc" secondAttribute="bottom" constant="25" id="f1Y-yK-LJf"/>
+                <constraint firstItem="pFR-Lv-dxc" firstAttribute="centerX" secondItem="ygq-BC-5Hm" secondAttribute="centerX" id="htr-l2-v42"/>
+                <constraint firstItem="pFR-Lv-dxc" firstAttribute="leading" secondItem="jUq-3I-LuG" secondAttribute="leading" constant="63" id="tiE-9v-7Si"/>
+                <constraint firstItem="ygq-BC-5Hm" firstAttribute="top" secondItem="jUq-3I-LuG" secondAttribute="top" constant="14" id="xTr-5l-hvl"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-226.5" y="651.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="free_weekend_banner" width="279" height="69"/>
+    </resources>
+</document>

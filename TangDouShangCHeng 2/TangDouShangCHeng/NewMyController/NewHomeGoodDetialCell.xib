@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="PingFang.ttc">
+            <string>PingFangSC-Regular</string>
+            <string>PingFangSC-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="83" id="KGk-i7-Jjw" customClass="NewHomeGoodDetialCell" customModule="TaoPiao" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="127"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="126.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bVq-sV-ypK">
+                        <rect key="frame" x="20" y="15" width="335" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="wum-5F-8qC"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="16"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GgR-Bg-GHP">
+                        <rect key="frame" x="20" y="45" width="335" height="23"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="23" id="qz4-p4-BiA"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="16"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¥ 80" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PiY-GN-khC">
+                        <rect key="frame" x="20" y="78" width="335" height="23"/>
+                        <fontDescription key="fontDescription" name="PingFangSC-Semibold" family="PingFang SC" pointSize="24"/>
+                        <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="PiY-GN-khC" firstAttribute="leading" secondItem="GgR-Bg-GHP" secondAttribute="leading" id="9zl-dT-bdo"/>
+                    <constraint firstItem="PiY-GN-khC" firstAttribute="top" secondItem="GgR-Bg-GHP" secondAttribute="bottom" constant="10" id="Hp5-VP-fzD"/>
+                    <constraint firstItem="bVq-sV-ypK" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="KLn-Dl-9eN"/>
+                    <constraint firstItem="GgR-Bg-GHP" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="LVl-m8-VDw"/>
+                    <constraint firstItem="bVq-sV-ypK" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="XG7-py-wkv"/>
+                    <constraint firstItem="PiY-GN-khC" firstAttribute="trailing" secondItem="GgR-Bg-GHP" secondAttribute="trailing" id="YOy-CC-gyi"/>
+                    <constraint firstItem="GgR-Bg-GHP" firstAttribute="top" secondItem="bVq-sV-ypK" secondAttribute="bottom" constant="5" id="cO6-Ef-DZq"/>
+                    <constraint firstAttribute="trailing" secondItem="bVq-sV-ypK" secondAttribute="trailing" constant="20" id="ccl-DM-Gax"/>
+                    <constraint firstAttribute="trailing" secondItem="GgR-Bg-GHP" secondAttribute="trailing" constant="20" id="ksJ-PS-OKK"/>
+                    <constraint firstItem="PiY-GN-khC" firstAttribute="height" secondItem="GgR-Bg-GHP" secondAttribute="height" id="u87-Ar-pk0"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="goodNameLabel" destination="GgR-Bg-GHP" id="XT6-aU-4rd"/>
+                <outlet property="nameHight" destination="qz4-p4-BiA" id="Sje-tw-8yg"/>
+                <outlet property="nameLabel" destination="bVq-sV-ypK" id="hfV-Pd-3UN"/>
+                <outlet property="priceLabel" destination="PiY-GN-khC" id="6P3-AI-TcR"/>
+            </connections>
+            <point key="canvasLocation" x="-146" y="-67.5"/>
+        </tableViewCell>
+    </objects>
+</document>

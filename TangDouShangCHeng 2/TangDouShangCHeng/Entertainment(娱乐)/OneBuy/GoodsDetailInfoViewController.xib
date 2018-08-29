@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GoodsDetailInfoViewController">
+            <connections>
+                <outlet property="goButton" destination="Wvx-wf-RlF" id="F3u-h6-Rkt"/>
+                <outlet property="jiexiaoView" destination="Ppg-bF-bjT" id="OvF-sE-qSf"/>
+                <outlet property="joinBotton" destination="RcG-re-vp2" id="pJO-uh-3S4"/>
+                <outlet property="messageLabel" destination="bRl-po-oP3" id="fjQ-In-Fdf"/>
+                <outlet property="myTableView" destination="tWN-86-OW2" id="T8g-wN-vqT"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="xjLabel" destination="daL-tp-27z" id="oeF-VY-RFr"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="none" rowHeight="44" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="tWN-86-OW2">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="522"/>
+                    <color key="backgroundColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="Ppy-Fw-6at"/>
+                        <outlet property="delegate" destination="-1" id="hDu-ez-89B"/>
+                    </connections>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RcG-re-vp2">
+                    <rect key="frame" x="16" y="530" width="287" height="30"/>
+                    <color key="backgroundColor" red="0.94117647059999998" green="0.039215686270000001" blue="0.039215686270000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" title=" 立即参与">
+                        <color key="titleColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="clickJoinButtonAction:" destination="-1" eventType="touchUpInside" id="yEB-t3-OER"/>
+                    </connections>
+                </button>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ppg-bF-bjT">
+                    <rect key="frame" x="0.0" y="523" width="320" height="45"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wvx-wf-RlF">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="45"/>
+                            <color key="backgroundColor" red="0.82352941180000006" green="0.062745098040000002" blue="0.1215686275" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <state key="normal" title="       立即前往     ">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="clickGoButtonAction:" destination="-1" eventType="touchUpInside" id="en7-yp-XvV"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="---" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bRl-po-oP3">
+                            <rect key="frame" x="0.0" y="0.0" width="220" height="45"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <color key="textColor" red="0.20784313725490194" green="0.20784313725490194" blue="0.20784313725490194" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="bRl-po-oP3" firstAttribute="leading" secondItem="Ppg-bF-bjT" secondAttribute="leading" id="4Gd-HG-rgc"/>
+                        <constraint firstItem="Wvx-wf-RlF" firstAttribute="leading" secondItem="Ppg-bF-bjT" secondAttribute="leading" id="77j-S2-mW6"/>
+                        <constraint firstItem="bRl-po-oP3" firstAttribute="top" secondItem="Ppg-bF-bjT" secondAttribute="top" id="Fcc-AP-q2E"/>
+                        <constraint firstAttribute="bottom" secondItem="bRl-po-oP3" secondAttribute="bottom" id="QaY-hZ-rGI"/>
+                        <constraint firstItem="Wvx-wf-RlF" firstAttribute="top" secondItem="Ppg-bF-bjT" secondAttribute="top" id="UCN-yi-5Gp"/>
+                        <constraint firstAttribute="trailing" secondItem="Wvx-wf-RlF" secondAttribute="trailing" id="Ylb-Zw-Xag"/>
+                        <constraint firstAttribute="trailing" secondItem="bRl-po-oP3" secondAttribute="trailing" constant="100" id="fGg-1R-rCJ"/>
+                        <constraint firstAttribute="height" constant="45" id="i0o-nv-rQB"/>
+                        <constraint firstAttribute="bottom" secondItem="Wvx-wf-RlF" secondAttribute="bottom" id="yzt-zE-yCm"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AeI-OS-T2V">
+                    <rect key="frame" x="0.0" y="522" width="320" height="1"/>
+                    <color key="backgroundColor" red="0.90196078431372551" green="0.90196078431372551" blue="0.90196078431372551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="jDx-7K-o37"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="该商品已下架" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="daL-tp-27z">
+                    <rect key="frame" x="0.0" y="523" width="320" height="45"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="Xfb-ga-stI"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" red="0.20784313725490194" green="0.20784313725490194" blue="0.20784313725490194" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Ppg-bF-bjT" firstAttribute="top" secondItem="AeI-OS-T2V" secondAttribute="bottom" id="02S-J0-UNL"/>
+                <constraint firstAttribute="bottom" secondItem="daL-tp-27z" secondAttribute="bottom" id="0bM-FT-c7x"/>
+                <constraint firstItem="tWN-86-OW2" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="0my-gL-hHW"/>
+                <constraint firstItem="Ppg-bF-bjT" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="2go-Lo-ZGN"/>
+                <constraint firstAttribute="bottom" secondItem="Ppg-bF-bjT" secondAttribute="bottom" id="CdM-yX-ytF"/>
+                <constraint firstAttribute="trailing" secondItem="daL-tp-27z" secondAttribute="trailing" id="IQq-rI-sGe"/>
+                <constraint firstItem="tWN-86-OW2" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="JNb-Tt-bIL"/>
+                <constraint firstItem="Ppg-bF-bjT" firstAttribute="top" secondItem="tWN-86-OW2" secondAttribute="bottom" constant="1" id="Own-mV-Vgs"/>
+                <constraint firstItem="RcG-re-vp2" firstAttribute="centerX" secondItem="AeI-OS-T2V" secondAttribute="centerX" id="SX3-nQ-RvV"/>
+                <constraint firstItem="AeI-OS-T2V" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="WQB-ez-GMe"/>
+                <constraint firstItem="RcG-re-vp2" firstAttribute="top" secondItem="tWN-86-OW2" secondAttribute="bottom" constant="8" symbolic="YES" id="dff-jl-Z7M"/>
+                <constraint firstAttribute="trailing" secondItem="tWN-86-OW2" secondAttribute="trailing" id="h3a-kg-xWi"/>
+                <constraint firstItem="daL-tp-27z" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="lY1-iV-0yk"/>
+                <constraint firstAttribute="trailing" secondItem="Ppg-bF-bjT" secondAttribute="trailing" id="me0-za-BiO"/>
+                <constraint firstAttribute="trailing" secondItem="AeI-OS-T2V" secondAttribute="trailing" id="tXd-de-gPT"/>
+                <constraint firstItem="RcG-re-vp2" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leadingMargin" id="uV5-gF-jxO"/>
+                <constraint firstItem="RcG-re-vp2" firstAttribute="centerY" secondItem="Ppg-bF-bjT" secondAttribute="centerY" id="yOl-TD-oj6"/>
+            </constraints>
+            <point key="canvasLocation" x="-356" y="-42"/>
+        </view>
+    </objects>
+</document>

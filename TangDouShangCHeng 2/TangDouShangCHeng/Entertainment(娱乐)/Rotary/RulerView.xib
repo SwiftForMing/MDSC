@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleAspectFit" id="iN0-l3-epB" customClass="RulerView" customModule="TangDouShangCHeng" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="380" height="236"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.90000000000000002" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="nN5-jx-M3E">
+                    <rect key="frame" x="0.0" y="0.0" width="380" height="236"/>
+                    <color key="backgroundColor" red="0.062745098040000002" green="0.16078431369999999" blue="0.078431372550000003" alpha="0.89875856160000001" colorSpace="custom" customColorSpace="sRGB"/>
+                    <string key="text">大转盘玩法规则
+
+1、每轮有50秒开奖时间和10秒结算时间，玩家在结算时间之前可用小米参与投注；
+2、用户使用小米进行投注，小米可以通过购买优惠券获赠小米，也可以参与活动获得更多小米。
+3、若玩家赢，则获得奖项上标注的倍数*投注量，玩家输则损失下注的小米
+
+小米用途：
+可在米豆商城直接兑换礼品，也可用于参与各种活动获得更多小米。</string>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="nN5-jx-M3E" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="HTw-3B-97v"/>
+                <constraint firstItem="nN5-jx-M3E" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="SVi-cF-YuO"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="nN5-jx-M3E" secondAttribute="bottom" id="kh3-Vm-fcl"/>
+                <constraint firstItem="nN5-jx-M3E" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="tMk-Wg-GVM"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="textView" destination="nN5-jx-M3E" id="ooI-Fr-GpZ"/>
+            </connections>
+            <point key="canvasLocation" x="-214" y="-146"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MoveView" customModule="TaoPiao" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="310" height="273"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lottery_win_bg" translatesAutoresizingMaskIntoConstraints="NO" id="nUI-Qv-kgx">
+                    <rect key="frame" x="0.0" y="0.0" width="310" height="273"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="＋9000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u7X-D6-vwO">
+                    <rect key="frame" x="0.0" y="61.5" width="310" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="TVD-bN-MTP"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                    <color key="textColor" red="1" green="0.98431372549999996" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="nUI-Qv-kgx" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="6eh-kw-YxZ"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="nUI-Qv-kgx" secondAttribute="trailing" id="K7D-f2-D1Y"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="nUI-Qv-kgx" secondAttribute="bottom" id="Sx8-Cg-NBG"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="u7X-D6-vwO" secondAttribute="trailing" id="WeD-7g-13i"/>
+                <constraint firstItem="nUI-Qv-kgx" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="XIy-mK-IgW"/>
+                <constraint firstItem="u7X-D6-vwO" firstAttribute="centerY" secondItem="nUI-Qv-kgx" secondAttribute="centerY" constant="-50" id="dSH-8E-YRe"/>
+                <constraint firstItem="u7X-D6-vwO" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="i2m-Ek-4lV"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="beanNumsLabbel" destination="u7X-D6-vwO" id="uJg-uY-Zia"/>
+                <outlet property="bgView" destination="nUI-Qv-kgx" id="xPr-3f-hTp"/>
+            </connections>
+            <point key="canvasLocation" x="-91" y="-46"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="lottery_win_bg" width="315" height="315"/>
+    </resources>
+</document>
